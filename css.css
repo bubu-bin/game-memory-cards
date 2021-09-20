@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+
+* {
+  cursor: url("C:/Users/gadzi/Desktop/Icons ready to go/magic_wand.png"), auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Grey Qo', cursive;
+}
+
+.container-memory-cards{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #662D91;
+}
+
+.box-memory-cards{
+  position: relative;
+  height: 90%;
+  width: 80%;
+  margin: auto;
+}
+
+.container-hourglass-timer{
+  height: 20%;
+  width: 100%;
+  position: relative;
+
+}
+
+.box-hourglass-timer{
+  position: relative;
+  height: 100%;
+  width: 20%;
+  left: 50.5%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.hourglass{
+  position: relative;
+  height: 80%;
+  width: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hourglass img{
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.timer{
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+#timer{
+  font-size:100px;
+  position: absolute;
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+.container-cards{
+  height: 75%;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  margin-top: 1.5%;
+}
+
+.cards{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.cards-inner{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 300ms ease-out;
+  transform-style: preserve-3d;
+
+}
+
+.cards-inner img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.cards-inner-active{
+  transform: rotateY(180deg);
+}
+
+
+.card-front, .card-back{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
+.card-back{
+  background: #662D91;
+  transform: rotateY(180deg);
+}
+
+.rabbit{
+  position: absolute;
+  height: 35%;
+  width: 15%;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+.rabbit img{
+  height: 100%;
+}
+
+#digit-rabbit{
+  position: absolute;
+  font-size: 75px;
+  top: -3%;
+  left: 70%;
+  background: none;
+  color: white;
+}
